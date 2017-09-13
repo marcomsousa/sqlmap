@@ -4,10 +4,9 @@ MAINTAINER Marco Sousa <marcomsousa+docker @ gmail.com>
 ENV DEBIAN_FRONTEND noninteractive
 
 RUN apk update && apk upgrade && \
-    apk add --no-cache bash git
+    apk add --no-cache git
 
-RUN git clone https://github.com/sqlmapproject/sqlmap.git \
-    && cd sqlmap
+RUN git clone https://github.com/sqlmapproject/sqlmap.git
 
 WORKDIR /sqlmap
 VOLUME /data
