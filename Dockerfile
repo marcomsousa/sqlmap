@@ -11,5 +11,5 @@ RUN git clone https://github.com/sqlmapproject/sqlmap.git
 WORKDIR /sqlmap
 VOLUME /data
 
-CMD ["—h"]
+CMD ["-version"]
 ENTRYPOINT ["./sqlmap.py"]
